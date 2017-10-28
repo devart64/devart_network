@@ -1,2 +1,2 @@
 <?php
-require "./../views/layout.php";
+require "views/layout.php";

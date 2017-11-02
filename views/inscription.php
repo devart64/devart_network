@@ -10,7 +10,11 @@ $title = 'Inscription';
 include'partials/_header.php'; ?>
 
     <main role="main" class="container">
-        <h1 class="text-center" style="color: #007bff;">Devenez dès à présent membre!</h1><br />
+        <h1 class="text-center lead" style="color: #007bff;">Devenez dès à présent membre!</h1><br />
+
+        <?php
+        include 'partials/_error.php';
+        ?>
         <form method="post" class="jumbotron col-md-6 offset-3">
             <!-- Name field -->
             <div class="form-group">

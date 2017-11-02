@@ -24,3 +24,4 @@
 
 <?php
 include '_nav.php';
+include '_flash.php';

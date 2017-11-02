@@ -5,6 +5,7 @@
  * Date: 28/10/2017
  * Time: 11:40
  */
+session_start();
 require 'includes/functions.php';
 require 'config/database.php';
 require 'includes/constants.php';
@@ -57,7 +58,8 @@ if (isset($_POST['register'])){
             mail($to, $subject, $content, $headers);
 
             //Informer l'utilisateur pour qu'il vérifie sa boite de reception
-            echo "Mail d'activation envoyé!";
+            set_flash("Mail d'activation envoyé!", 'success');
+            redirect('index.php');
         }
 
     }else {
